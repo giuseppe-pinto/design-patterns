@@ -1,4 +1,4 @@
-package factory.domain;
+package decorator;
 
 public class SimpleWindow implements Window
 {
