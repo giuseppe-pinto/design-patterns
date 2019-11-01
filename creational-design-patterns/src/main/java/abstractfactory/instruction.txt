@@ -1,4 +1,0 @@
-Scopo:
-  fornire un'interfaccia per la creazione di famiglie di oggetti correlati
-  o dipendenti senza specificare quali siano le loro classi concrete.
-
