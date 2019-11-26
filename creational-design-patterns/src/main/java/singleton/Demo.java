@@ -1,7 +1,11 @@
 package singleton;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+import java.util.stream.Collectors;
 
 public class Demo
 {
@@ -9,8 +13,9 @@ public class Demo
   {
     //asList(new Th1(), new Th2()).parallelStream().forEach(Runnable::run);
     ExecutorService executor = Executors.newFixedThreadPool(2);
-    executor.submit(() -> new Th1().run());
-    executor.submit(() -> new Th1().run());
+
+    List<Th1> xx = Arrays.asList(new Th1(), new Th1());
+    List<Future<?>> collectors = xx.stream().map(executor::submit).collect(Collectors.toList());
     executor.shutdown();
   }
 
