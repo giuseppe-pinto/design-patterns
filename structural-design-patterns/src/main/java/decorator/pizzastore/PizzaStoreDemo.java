@@ -1,9 +1,9 @@
-package decorator;
+package decorator.pizzastore;
 
-import decorator.component.FarmHouse;
-import decorator.component.Margherita;
-import decorator.component.Pizza;
-import decorator.concretedecorator.FreshTomato;
+import decorator.pizzastore.component.FarmHouse;
+import decorator.pizzastore.component.Margherita;
+import decorator.pizzastore.component.Pizza;
+import decorator.pizzastore.concretedecorator.FreshTomato;
 import decorator.explanation.Paneer;
 
 public class PizzaStoreDemo

@@ -1,6 +1,6 @@
-package decorator.concretedecorator;
+package decorator.pizzastore.concretedecorator;
 
-import decorator.component.Pizza;
+import decorator.pizzastore.component.Pizza;
 
 public class FreshTomato extends ToppingsPizza
 {

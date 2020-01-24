@@ -1,4 +1,4 @@
-package decorator;
+package decorator.windowsdecorator;
 
 public interface Window
 {

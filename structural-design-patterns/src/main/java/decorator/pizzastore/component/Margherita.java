@@ -1,6 +1,4 @@
-package decorator.component;
-
-import decorator.component.Pizza;
+package decorator.pizzastore.component;
 
 public class Margherita extends Pizza
 {

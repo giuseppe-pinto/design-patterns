@@ -1,7 +1,7 @@
 package decorator.explanation;
 
-import decorator.component.Pizza;
-import decorator.concretedecorator.ToppingsPizza;
+import decorator.pizzastore.component.Pizza;
+import decorator.pizzastore.concretedecorator.ToppingsPizza;
 
 public class Paneer extends ToppingsPizza
 {

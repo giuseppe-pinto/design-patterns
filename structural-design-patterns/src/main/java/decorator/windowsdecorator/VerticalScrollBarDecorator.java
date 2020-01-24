@@ -1,4 +1,4 @@
-package decorator;
+package decorator.windowsdecorator;
 
 public class VerticalScrollBarDecorator extends WindowDecorator
 {

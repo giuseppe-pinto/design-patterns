@@ -1,4 +1,4 @@
-package decorator.component;
+package decorator.pizzastore.component;
 
 
 // Abstract Pizza class (All classes extend from this) Component

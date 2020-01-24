@@ -1,7 +1,7 @@
-package decorator.concretedecorator;
+package decorator.pizzastore.concretedecorator;
 
 
-import decorator.component.Pizza;
+import decorator.pizzastore.component.Pizza;
 
 // The decorator class :  It extends Pizza to be
 // interchangable with it topings decorator can
