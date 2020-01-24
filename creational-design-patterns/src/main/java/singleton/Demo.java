@@ -14,8 +14,13 @@ public class Demo
     //asList(new Th1(), new Th2()).parallelStream().forEach(Runnable::run);
     ExecutorService executor = Executors.newFixedThreadPool(2);
 
-    List<Th1> xx = Arrays.asList(new Th1(), new Th1());
-    List<Future<?>> collectors = xx.stream().map(executor::submit).collect(Collectors.toList());
+    List<Th1> list = Arrays.asList(new Th1(), new Th1());
+
+    List<Future<?>> collectors = list
+      .stream()
+      .map(executor::submit)
+      .collect(Collectors.toList());
+
     executor.shutdown();
   }
 
