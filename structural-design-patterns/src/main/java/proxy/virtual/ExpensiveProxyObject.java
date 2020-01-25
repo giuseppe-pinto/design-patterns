@@ -1,0 +1,17 @@
+package proxy.virtual;
+
+public class ExpensiveProxyObject implements ExpensiveObject
+{
+  private static ExpensiveObject object;
+
+  @Override
+  public void process()
+  {
+    if(object == null){
+      object = new ExpensiveObjectImpl();
+    }
+
+    object.process();
+
+  }
+}
