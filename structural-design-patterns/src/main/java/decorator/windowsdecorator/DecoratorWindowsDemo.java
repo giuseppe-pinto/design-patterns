@@ -8,6 +8,8 @@ public class DecoratorWindowsDemo
     Window decoratedWindow = new HorizontalScrollBarDecorator (
       new VerticalScrollBarDecorator(new SimpleWindow()));
 
+    decoratedWindow.draw();
+    
     // Print the Window's description
     System.out.println(decoratedWindow.getDescription());
   }
